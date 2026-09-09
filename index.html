@@ -170,45 +170,77 @@
     <hr>
 
 <section class="contact-form">
-    <form class="form">
-        <div class="campo-full">
-            <label for="name">Nome:</label>
-            <input type="text" id="name">
-        </div>
+<form 
+    action="https://formspree.io/f/xvkodrqr"
+    method="POST"
+    class="form">
 
-        <div class="campo">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email">
-        </div>
+    <div class="campo-full">
+        <label for="name">Nome:</label>
+        <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required
+        >
+    </div>
 
-        <div class="campo">
-            <label for="telephone">Telefone:</label>
-            <input type="tel" id="telephone">
-        </div>
+    <div class="campo">
+        <label for="email">E-mail:</label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required
+        >
+    </div>
 
-        <div class="campo">
-            <label for="interests">Interesses:</label>
-            <select id="interests">
-                <option value="">Selecione</option>
-                <option value="site">Site</option>
-                <option value="landing">Landing page</option>
-                <option value="design">Design</option>
-                <option value="other">Outro</option>
-            </select>
-        </div>
+    <div class="campo">
+        <label for="telephone">Telefone:</label>
+        <input 
+            type="tel" 
+            id="telephone" 
+            name="telephone"
+        >
+    </div>
 
-        <div class="campo">
-            <label for="budget">Orçamento</label>
-            <input type="text" id="budget">
-        </div>
+    <div class="campo">
+        <label for="interests">Interesses:</label>
+        <select 
+            id="interests" 
+            name="interests"
+        >
+            <option value="">Selecione</option>
+            <option value="site">Site</option>
+            <option value="landing">Landing page</option>
+            <option value="design">Design</option>
+            <option value="other">Outro</option>
+        </select>
+    </div>
 
-        <div class="campo campo-full">
-            <label for="message">Sua mensagem:</label>
-            <textarea id="message"></textarea>
-        </div>
-        
-        <a href="https://wa.me/5585984548239" class="button">Solicitar Orçamento</a>
-    </form>
+    <div class="campo">
+        <label for="budget">Orçamento:</label>
+        <input 
+            type="text" 
+            id="budget" 
+            name="budget"
+        >
+    </div>
+
+    <div class="campo campo-full">
+        <label for="message">Sua mensagem:</label>
+        <textarea 
+            id="message" 
+            name="message" 
+            required
+        ></textarea>
+    </div>
+
+    <button type="submit" class="button">
+        Solicitar Orçamento
+    </button>
+
+</form>
 </section>
 
 <section class="feedbacks">
